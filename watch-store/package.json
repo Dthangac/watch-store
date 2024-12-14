@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=./",
+    "build": "vite build",
     "lint": "eslint .",
+    "deploy": "npm run build && gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
